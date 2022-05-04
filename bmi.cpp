@@ -14,6 +14,11 @@ int stones2pounds(int x)
     return(x*14);
 }
 
+int pounds2kg(int x)
+{
+    return(x*2.2);
+}
+
 double weight2kg(int stones, int pounds, int ounces)
 {
     return (stones2pounds(stones)+pounds+ounces2pounds(ounces))/2.2;
