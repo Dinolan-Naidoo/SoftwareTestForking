@@ -5,7 +5,8 @@
 using namespace std;
 
 int ounces2pounds(int x)
-{
+{    
+    if(x>0) //Checking if positive number
     return(x*16);
 }
 
@@ -13,21 +14,25 @@ int ounces2pounds(int x)
 
 int stones2pounds(int x)
 {
+    if(x>0) //Checking if positive number
     return(x*14);
 }
 
 int pounds2kg(int x)
 {
+    if(x>0) //Checking if positive number
     return(x*2.2);
 }
 
 double weight2kg(int stones, int pounds, int ounces)
 {
+    if(stones >0 && pounds > 0 && ounces > 0) //Checking for negatives   
     return (stones2pounds(stones)+pounds+ounces2pounds(ounces))/2.2;
 }
 
 double height2metres(int feet, int inches)
 {
+    if(feet > 0 && inches > 0) //Checking for negatives
     return(feet+(inches/12)/3.82);
 }
 
